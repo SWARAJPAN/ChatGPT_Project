@@ -11,7 +11,7 @@ You will need to have Node.js and npm (Node Package Manager) installed on your m
 Installing
 Clone the repository to your local machine:
 
-git clone https://github.com/YOUR-USERNAME/ChatGPT-Clone.git
+git clone https://github.com/SWARAJPAN/ChatGPT_Project.git
 
 Navigate to the project directory:
 
