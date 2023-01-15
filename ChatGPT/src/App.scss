@@ -1,0 +1,105 @@
+@import "normalize-scss/sass/normalize";
+
+$primary-color: #222224;
+$secondary-color: #353740;
+$font-stack: "Poppins", sans-serif;
+
+#root {
+  // max-width: 1280px;
+  // margin: 0 auto;
+  // padding: 2rem;
+  text-align: center;
+  font: 100% $font-stack;
+}
+
+.App {
+  display: flex;
+  text-align: center;
+  // height: 100vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  // border: 2px solid red;
+}
+
+.side-bar {
+  width: 320px;
+  margin-right: auto;
+  padding: 1rem;
+  background-color: $primary-color;
+}
+
+.chat-content {
+  flex: 1;
+  background-color: $secondary-color;
+  position: relative;
+}
+
+.chat-display {
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  text-align: left;
+  display: flex;
+  text-transform: none;
+  height: 100%;
+  overflow: scroll;
+}
+
+.chat-display::-webkit-scrollbar {
+  display: none;
+}
+
+.user-message {
+  display: flex;
+  padding: 0px 20%;
+  align-items: center;
+  justify-content: flex-start;
+}
+.chatgpt-message {
+  display: flex;
+  background-color: #444654;
+  padding: 0px 20%;
+  align-items: baseline;
+  justify-content: flex-start;
+  // margin-bottom: 10rem;
+  position: relative;
+
+  // font-family: "Roboto Mono", monospace;
+}
+.last-chat {
+  margin-bottom: 10rem;
+}
+
+.chatgpt-avatar {
+  position: absolute;
+  top: 10px;
+}
+
+@media (max-width: 600px) {
+  .side-bar {
+    display: none;
+  }
+  .user-message {
+    padding: 0 5%;
+  }
+  .chatgpt-message {
+    padding: 0 5%;
+  }
+}
+
+.input-bg {
+  height: 150px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(49, 48, 48, 0),
+    rgb(53, 55, 64),
+    rgb(53, 55, 64)
+  );
+}
