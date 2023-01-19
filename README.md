@@ -25,8 +25,9 @@ Start the development server:
 
 npm start
 
-This will start the development server on port 3000. You can access the project in your browser at http://localhost:3000
+This will start the development server on port 3000. You can access the project in your browser at http://localhost:3080
 
 Built With
 React - JavaScript library for building user interfaces
+Material UI - Styling library
 OpenAI - Language model API
